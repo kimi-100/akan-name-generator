@@ -56,9 +56,26 @@ body{
     align-items: center;
     gap: 20px;
 }
-
+/* FORMATTING THE CARD CONTENTS */
+/* CARD HEADER */
 .cardHeader{
     position: relative;
     bottom: 30px;
     font-family: Lexend Deca;
 }
+/* FORM */
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
