@@ -21,10 +21,10 @@ body{
 
 .title{
     font-family: Lexend Deca;
-    font-size: 60px;
+    font-size: 50px;
     color: transparent;
     -webkit-background-clip: text;
-    background-image: url(https://t4.ftcdn.net/jpg/16/31/75/67/240_F_1631756729_Uni2cnQmdqjcGHmntgvVrh4FvpGGA9o9.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flag_of_Ethiopia_AOE3.svg/1280px-Flag_of_Ethiopia_AOE3.svg.png?20211106142336);
     padding: 0%;
     background-size: contain;  
 }  
@@ -57,13 +57,6 @@ body{
     gap: 20px;
 }
 /* FORMATTING THE CARD CONTENTS */
-/* CARD HEADER */
-.cardHeader{
-    position: relative;
-    bottom: 30px;
-    font-family: Lexend Deca;
-}
-/* FORM */
 .formContainer{
     display: flex;
     flex-direction: column;
@@ -71,7 +64,7 @@ body{
     align-items: center;
     gap: 40px;
 }
-
+/* FORMATTING THE LABELS AND FIELDS */
 .field{
     display: flex;
     flex-direction: column;
@@ -87,4 +80,25 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.
+.formLabel{
+    font-family: Lexend Deca;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+/* FORMATTING THE SUBMIT BUTTON */
+.field button{
+    border-radius: 80px;
+    margin: 20px;
+    padding: 10px 40px;
+    border-width: 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Lexend Deca;
+    cursor: pointer;
+    transition: 0.3s;}
+
+.field button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scaleX(1.05);
+}
