@@ -79,3 +79,12 @@ body{
     align-items: center;
 }
 
+.formField{
+    border-radius: 80px;
+    text-align: left;
+    border-width: 0px;
+    padding: 5px 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.
