@@ -16,14 +16,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .title{
     font-family: Lexend Deca;
-    font-size: 70px;
+    font-size: 60px;
     color: transparent;
     -webkit-background-clip: text;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/500px-Flag_of_Ghana.svg.png);
+    background-image: url(https://t4.ftcdn.net/jpg/16/31/75/67/240_F_1631756729_Uni2cnQmdqjcGHmntgvVrh4FvpGGA9o9.jpg);
     padding: 0%;
     background-size: contain;  
 }  
@@ -32,4 +33,32 @@ body{
     font-family: Lexend Deca;
     font-size: 20px;
     color: white;
+}
+
+/* FORMATTING THE CARDS CONTAINER */
+.cardsContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* FORMATTING THE FORM-DISPLAY CARD */
+.card{
+    background-image: linear-gradient(to left, #ff0000, #fbff00, #27751f);
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardHeader{
+    position: relative;
+    bottom: 30px;
+    font-family: Lexend Deca;
 }
