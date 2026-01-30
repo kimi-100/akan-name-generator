@@ -7,6 +7,8 @@
 /* BODY FORMATTING */
 body{
     background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZwMXRpY3U3eXFrbW04bm55cXFyaWJqMzZ0bHIwaW10b29zNnM2ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TxVVB6PfWMjE4/giphy.gif);
+    backdrop-filter: blur(90%);
+    backdrop-filter: brightness(40%);
 }
 /* GRIDDING */
 .gridContainer{
@@ -85,10 +87,13 @@ body{
 
 .formField{
     border-radius: 80px;
-    text-align: left;
     border-width: 0px;
-    padding: 5px 40px;
+    padding: 8px 40px;
     background-color: rgb(255, 255, 255);
+    font-family: Lexend Deca;
+}
+
+.formField option{
     font-family: Lexend Deca;
 }
 
@@ -96,13 +101,14 @@ body{
     font-family: Lexend Deca;
     color: rgb(0, 0, 0);
     margin: 10px;
+    font-size: 20px;
 }
 /* FORMATTING THE SUBMIT BUTTON */
 .field button{
     border-radius: 80px;
     margin-top: 30px;
     margin-bottom: 10px;
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-width: 0px;
     background-color: rgb(0, 0, 0);
     color: white;
