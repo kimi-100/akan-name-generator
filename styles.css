@@ -7,7 +7,7 @@
 /* BODY FORMATTING */
 body{
     background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZwMXRpY3U3eXFrbW04bm55cXFyaWJqMzZ0bHIwaW10b29zNnM2ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TxVVB6PfWMjE4/giphy.gif);
-    backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(30%);
 }
 /* GRIDDING */
 .gridContainer{
@@ -67,6 +67,11 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 42, 0.6);
 }
 /* FORMATTING THE CARD CONTENTS */
 .formContainer{
