@@ -1,0 +1,26 @@
+.titleDesc{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+.title{
+    font-family: Lexend Deca;
+    font-size: 70px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/500px-Flag_of_Ghana.svg.png);
+    padding: 0%;
+    background-size: contain;    
+}
+
+.desc{
+    font-family: Lexend Deca;
+    font-size: 20px;
+    color: white;
+}
