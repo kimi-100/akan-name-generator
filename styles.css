@@ -70,9 +70,6 @@ body{
     transition: 0.7s ease-in-out;
 }
 
-.card:hover {
-    box-shadow: 0 0 30px rgba(0, 255, 42, 0.6);
-}
 /* FORMATTING THE CARD CONTENTS */
 .formContainer{
     display: flex;
