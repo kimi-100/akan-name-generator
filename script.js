@@ -15,9 +15,9 @@ form.addEventListener("submit", function (event) {
     let akanName = ""
     let akanMeaning = ""
     const birthDate = new Date(dateInput);
-    let DD = birthDate.getUTCDate();
-    let MM = birthDate.getUTCMonth() + 1;
-    let year = birthDate.getUTCFullYear();
+    let DD = birthDate.getDate();
+    let MM = birthDate.getMonth() + 1;
+    let year = birthDate.getFullYear();
         if (MM < 3) {
             MM += 12;
             year -= 1;
