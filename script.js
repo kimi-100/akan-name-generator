@@ -18,12 +18,15 @@ form.addEventListener("submit", function (event) {
     let DD = birthDate.getDate();
     let MM = birthDate.getMonth() + 1;
     let year = birthDate.getFullYear();
+    // ENSURES THAT IT RESETS MONTH COUNT AT JANUARY
         if (MM < 3) {
             MM += 12;
             year -= 1;
         }
     const CC = parseFloat(String(year).slice(0, 2));
     const YY = parseFloat(String(year).slice(2, 4));
+
+    //FORMULA TO GET THE INDEX OF THE DAYS (ADDED MATH FLOOR FOR ACCURACY)
     let d = (
         Math.floor(CC / 4) - (2 * CC) - 1 +
         Math.floor(5 * YY / 4) +
@@ -32,7 +35,7 @@ form.addEventListener("submit", function (event) {
 
     if (d < 0) { d += 7; d = d} 
 
-    // AKAN NAMES IN ARRAYS
+    // AKAN NAMES AND MEANINGS IN ARRAYS
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     const akanMeanings = [
