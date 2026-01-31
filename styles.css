@@ -6,8 +6,10 @@
 }
 /* BODY FORMATTING */
 body{
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZwMXRpY3U3eXFrbW04bm55cXFyaWJqMzZ0bHIwaW10b29zNnM2ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TxVVB6PfWMjE4/giphy.gif);
+    background-image: url(https://i.pinimg.com/1200x/96/bf/db/96bfdbd8ce81576a45cd9b59c5d48d76.jpg);
     backdrop-filter: brightness(30%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* GRIDDING */
 .gridContainer{
@@ -37,7 +39,7 @@ body{
 
 .title{
     font-family: Lexend Deca;
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
     color: transparent;
     -webkit-background-clip: text;
@@ -76,6 +78,8 @@ body{
     align-items: center;
     gap: 20px;
     transition: 0.7s ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
 }
 
 /* FORMATTING THE CARD CONTENTS */
