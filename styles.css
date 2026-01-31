@@ -90,6 +90,11 @@ body{
     align-items: center;
     gap: 40px;
 }
+
+.form{
+    display: flex;
+    top: 30px;
+}
 /* FORMATTING THE LABELS AND FIELDS */
 .field{
     display: flex;

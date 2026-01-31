@@ -15,30 +15,34 @@ form.addEventListener("submit", function (event) {
     let akanName = ""
     let akanMeaning = ""
     const birthDate = new Date(dateInput);
-    const DD = birthDate.getDate();
-    const MM = birthDate.getMonth() + 1;
-    const year = birthDate.getFullYear();
+    let DD = birthDate.getUTCDate();
+    let MM = birthDate.getUTCMonth() + 1;
+    let year = birthDate.getUTCFullYear();
+        if (MM < 3) {
+            MM += 12;
+            year -= 1;
+        }
     const CC = parseFloat(String(year).slice(0, 2));
     const YY = parseFloat(String(year).slice(2, 4));
-    let d = Math.floor(
-        (4*CC - 2 * CC -1) + 
-        ((5 * YY)/4) + 
-        ((26 * (MM +1))/10) 
-        + DD
-    ) % 7;
-    if (d < 0) { d += 7; } 
+    let d = (
+        Math.floor(CC / 4) - (2 * CC) - 1 +
+        Math.floor(5 * YY / 4) +
+        Math.floor(26 * (MM + 1) / 10) + DD
+        )% 7;
+
+    if (d < 0) { d += 7; d = d} 
 
     // AKAN NAMES IN ARRAYS
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     const akanMeanings = [
-        "Born on a Sunday, you are a Manchester United fan.(YUCK)",
-        "Born on a Monday, you are a Chelsea fan.",
-        "Born on a Tuesday, you are a Real Madrid fan.",
-        "Born on a Wednesday, you are a Manchester City fan.",
-        "Born on a Thursday, you are a Spurs fan.",
-        "Born on a Friday, you are an Arsenal fan.",
-        "Born on a Saturday, you are a Barcelona FC fan."
+        "This is because you were born on a Sunday!",
+        "This is because you were born on a Monday!",
+        "This is because you were born on a Tuesday!",
+        "This is because you were born on a Wednesday!",
+        "This is because you were born on a Thursday!",
+        "This is because you were born on a Friday!",
+        "This is because you were born on a Saturday!"
     ];
 
     // CONDITIONS TO DETERMINE AKAN NAME
