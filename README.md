@@ -1,8 +1,3 @@
-# akan-name-generator
-Here is a professionally formatted README file for your **Akan Name Generator** project. You can copy and paste the content below into your `README.md` file.
-
----
-
 # Akan Name Generator
 
 In Ghana, the Akan people often name their children after the day of the week they were born. This application brings that tradition to the web. Simply enter your birth date and gender to discover your unique Akan name and the day of the week you entered the world!
@@ -10,6 +5,13 @@ In Ghana, the Akan people often name their children after the day of the week th
 ## 🚀 Demo
 
 You can view the live application here: [Akan Name Generator Live](https://kimi-100.github.io/akan-name-generator/)
+
+👥 Author Information
+Name: [Victor Kiptoo Kimitei]
+
+GitHub: kimi-100
+
+Email: [kimiteivictor@gmail.com]
 
 ## 📝 Description
 
