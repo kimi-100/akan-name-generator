@@ -60,5 +60,5 @@ form.addEventListener("submit", function (event) {
     // DISPLAYING THE AKAN NAME AND MEANING
     document.querySelector("#akanNameDisplay").innerText = `It would be: ${akanName}`;
     document.querySelector("#akanMeaningDisplay").innerText = akanMeaning;
-
+    
 });
